@@ -6,7 +6,7 @@ public class GenerateOTP {
 	
 	public static void main(String args[]) {
 		
-		Supplier<String> s = () ->{
+		  Supplier<String> s = () ->{
 			
 			String otp = "";
 			for(int i = 0;i < 6;i++) {
