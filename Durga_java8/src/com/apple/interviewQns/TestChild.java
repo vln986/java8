@@ -12,6 +12,7 @@ public class TestChild extends TestAbstract {
 	}
 	
 	public TestChild(int x , int y) {
+		super(7);
 		//this();
 	}
 	
@@ -19,8 +20,8 @@ public class TestChild extends TestAbstract {
 	
 	public static void main(String args[]) {
 		System.out.println("Main method ...");
-		
-		TestAbstract ta = new TestAbstract() {
+		int s = 5;
+		TestAbstract ta = new TestAbstract(s) {
 			@Override
 			public void add() {
 				// TODO Auto-generated method stub
@@ -29,7 +30,10 @@ public class TestChild extends TestAbstract {
 			}
 			
 		};
-		
+		TestAbstract ta1 = new TestAbstract(s) {
+			
+			
+		};
 		//ta.add();
 		
 		TestChild testChild = new TestChild(3,4);

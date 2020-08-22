@@ -13,7 +13,22 @@ public class TestMultipleImpl implements Left, Right{
 	public static void main(String args[]) {
 		TestMultipleImpl t = new TestMultipleImpl();
 		t.m1();
+		Left.m2();
+		Left l = new Left() {
+			public void m1() {
+				
+			}
+
+			public void m2() {
+				// TODO Auto-generated method stub
+				
+			}
+		};
 		System.out.println("done");
+	}
+	public void m2() {
+		// TODO Auto-generated method stub
+		
 	}
 
 }

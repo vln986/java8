@@ -1,6 +1,8 @@
 package com.durga.entity;
 
-public class Employee {
+public class Employee implements Comparable<Employee> {
+	
+	public int id;
 	
 	public String empName;
 	public String designation;
@@ -53,5 +55,19 @@ public class Employee {
 		//return "EmployeeName : "+empName+ " Sal : "+salary+ " Designation : "+designation+ " city : "+city;
 		String s = String.format("%s,%s,%2f,%s", empName, designation,salary,city);
 		return s;
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	@Override
+	public int compareTo(Employee o) {
+		
+		return this.id - o.id;
 	}
 }
