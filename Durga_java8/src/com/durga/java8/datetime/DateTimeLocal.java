@@ -9,6 +9,11 @@ public class DateTimeLocal {
 		
 		LocalDateTime dt = LocalDateTime.now();
 		
+		int i = 12;double d = 12.34;char c = '1';
+		char c2 = (char) i;
+		double d2 = i;
+		int x = c;
+		
 		int dd = dt.getDayOfMonth();
 		int mm = dt.getMonthValue();
 		int yyyy = dt.getYear();

@@ -22,14 +22,15 @@ public class EmployeeList {
 		
 		System.out.println(empList);
 		
-		//List<String> list = empList.stream().filter(emp -> emp.salary > 3000).map(e->e.getEmpName()).collect(Collectors.toList());
-		//System.out.println(list);
+		List<String> list = empList.stream().filter(emp -> emp.salary > 3000).map(e->e.getEmpName()).collect(Collectors.toList());
+		System.out.println(list);
 		
 		//Collections.sort(empList, new EmployeeSortByName());
 		
 		Collections.sort(empList, new EmployeeSortBySalary());
 		
 		empList.sort(Comparator.comparing(Employee::getEmpName).thenComparing(Employee::getSalary));
+		Collections.sort(empList);
 		
 		System.out.println(empList);
 	}
