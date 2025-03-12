@@ -1,4 +1,4 @@
-package com.apple.interviewQns;
+package com.apple.interviewPrgs;
 
 public class Singleton implements Cloneable {
 	

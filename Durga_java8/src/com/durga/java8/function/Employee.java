@@ -2,11 +2,13 @@ package com.durga.java8.function;
 
 public class Employee {
 	
+	
+	int empId;
 	String name;
 	public double salary;
 	
-	public Employee(String name, double salary) {
-		
+	public Employee(int id,String name, double salary) {
+		this.empId = id;
 		this.name = name;
 		this.salary = salary;
 		
@@ -30,6 +32,14 @@ public class Employee {
 
 	public void setSalary(double salary) {
 		this.salary = salary;
+	}
+
+	public int getEmpId() {
+		return empId;
+	}
+
+	public void setEmpId(int empId) {
+		this.empId = empId;
 	}
 
 }
