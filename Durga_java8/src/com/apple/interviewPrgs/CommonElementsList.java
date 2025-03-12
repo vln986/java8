@@ -1,4 +1,4 @@
-package com.durga.java8.streams;
+package com.apple.interviewPrgs;
 
 import java.util.ArrayList;
 import java.util.Comparator;
@@ -24,9 +24,14 @@ public class CommonElementsList {
 		emplist.stream().forEach(e -> System.out.println(e));
 		List<Employee> employeeListById = new ArrayList();
 		
+		//filtering emplist based on ids available in empids using streams
+		
 		employeeListById = emplist.stream().filter(emp -> empids.contains(emp.getEmpId()))
 				.collect(Collectors.toList());
 		employeeListById.stream().forEach(emp -> System.out.println(emp));
+		
+		//grouping based on employee salary
+		
 		emplist.stream().collect(Collectors.groupingBy(Employee::getSalary));
 		
 		
