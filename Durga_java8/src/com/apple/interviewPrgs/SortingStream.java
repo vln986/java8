@@ -9,7 +9,7 @@ import com.durga.java8.function.Employee;
 
 public class SortingStream {
 	
-	public static void main(String args[]){{
+	public static void main(String args[]){
 		
 		List<Employee> emplist = new ArrayList<Employee>();
 		emplist.add(new Employee(1,"A", 10000));
